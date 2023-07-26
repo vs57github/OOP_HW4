@@ -1,0 +1,20 @@
+public class Main {
+    public static <T extends Comparable<T>> T getMax(T a, T b) {
+        if (a.compareTo(b) > 0) {
+            return a;
+        } else {
+            return b;
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer maxInteger = getMax(5, 10);
+        System.out.println("Максимальное целое число: " + maxInteger);
+
+        Double maxDouble = getMax(3.14, 2.71);
+        System.out.println("Максимальное число с плавающей запятой: " + maxDouble);
+
+        String maxString = getMax("Hello", "World");
+        System.out.println("Максимальная строка: " + maxString);
+    }
+}

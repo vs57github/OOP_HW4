@@ -1,0 +1,17 @@
+package OOPs4.printElement;
+
+public class Main {
+    public static <T> void printElement(T element) {
+        System.out.println(element);
+    }
+
+    public static void main(String[] args) {
+        Integer integerElement = 10;
+        String stringElement = "Hello, world!";
+        Double doubleElement = 3.14;
+
+        printElement(integerElement);
+        printElement(stringElement);
+        printElement(doubleElement);
+    }   
+}
